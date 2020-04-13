@@ -1,0 +1,773 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar{
+    width: 100%;
+    background-color: #333333;
+    overflow: auto;
+    position: fixed;
+    z-index: 9;
+    overflow: auto;
+}
+.containerofnavbar{
+    width: 85%;
+    margin: auto;
+}
+.navbar ul{
+    list-style: none;
+    padding: 15px 0;
+}
+.navbar ul h3{
+    color: #FF305B;
+}
+.navbar ul .leftli{
+    float: left;
+}
+.navbar ul .rightnavbar{
+    float: right;
+}
+.navbar a{
+    color: white;
+    text-decoration: white;
+}
+.navbar .rightnavbar li{
+    float: left;
+    color: white;
+    margin-left: 15px;
+    padding-bottom: 10px;
+}
+.home{
+    color: #FF305B;
+}
+.navbar a:hover {
+    color: #FF305B;
+}
+.clr{
+    clear: both;
+}
+
+/**************************************************************************************************/
+/**************************************************************************************************/
+
+.Section1{
+    background-image: url('img/slider/slider-01.jpg');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 635px;
+    overflow: auto;
+}
+.Section1 .Section1Layer{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.Section1 .Section1Body{
+    margin: auto;
+    width: max-content;
+    color: white;
+    text-align: center;
+    margin-top: 250px;
+}
+.Section1 .Section1Body h1{
+    color: FF305B;
+    font-size: 60px;
+}
+.Section1 .Section1Body p{
+    font-size: 20px;
+    position: relative;
+    width: max-content;
+    text-align: center;
+    margin: auto;
+}
+.Section1 .Section1Body p::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 102%;
+    animation: DandD 7s infinite ;
+}
+@keyframes DandD{
+    0%  {content: '|';}
+    2%  {content: 'D|';}
+    5%  {content: 'De|';}
+    7%  {content: 'Dev|';}
+    10%  {content: 'Deve|';}
+    12%  {content: 'Devel|';}
+    15%  {content: 'Develo|';}
+    17%  {content: 'Develop|';}
+    20%  {content: 'Develope|';}
+    22%  {content: 'Developer|';}
+    25%  {content: 'Develope|';}
+    27%  {content: 'Develop|';}
+    30%  {content: 'Develo|';}
+    32%  {content: 'Devel|';}
+    35%  {content: 'Deve|';}
+    37%  {content: 'Dev|';}
+    40%  {content: 'De|';}
+    42%  {content: 'D|';}
+    45%  {content: '|';}
+    48%  {content: 'D|';}
+    50%  {content: 'De|';}
+    53%  {content: 'Des|';}
+    55%  {content: 'Desi|';}
+    57%  {content: 'Desig|';}
+    60%  {content: 'Design|';}
+    63%  {content: 'Designe|';}
+    65%  {content: 'Designer|';}
+    68%  {content: 'Designe|';}
+    70%  {content: 'Design|';}
+    73%  {content: 'Desig|';}
+    75%  {content: 'Desi|';}
+    78%  {content: 'Des|';}
+    80%  {content: 'De|';}
+    90%  {content: 'D|';}
+    100%  {content: '';}
+}
+/********************************************************************************************/
+/********************************************************************************************/
+.Section2{
+    width: 100%;
+    overflow: auto;
+}
+.Section2 .ContatinerOfSection2{
+    margin: 90px auto;
+    width: 90%;
+    padding: 30px 15px;
+    overflow: auto;
+}
+.Section2 .ContatinerOfSection2 .LeftPart{
+    width: 50%;
+    float: left;
+}
+.Section2 .ContatinerOfSection2 .LeftPart .ImageBorder{
+    border: 7px solid #555555;
+    border-radius: 7px;
+    width: 360px;
+    height: 440px;
+    margin: auto;
+    position: relative;
+}
+.Section2 .ContatinerOfSection2 .LeftPart .ImageBorder .MyImage{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    overflow: hidden;
+}
+.Section2 .ContatinerOfSection2 .LeftPart .ImageBorder .MyImage img{
+    width: 100%;
+    height: 100%;
+}
+.Section2 .ContatinerOfSection2 .LeftPart .ImageBorder .MyImage .ImageLayer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 33, 33, 0.2);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 1s all;
+}
+.Section2 .ContatinerOfSection2 .LeftPart .ImageBorder .MyImage:hover .ImageLayer{
+    top: 0;
+}
+.Section2 .ContatinerOfSection2 .LeftPart .ImageBorder .MyImage .ImageLayer .LayerData{
+    width: 60%;
+    margin: 50% auto;
+    overflow: auto;
+}
+.Section2 .ContatinerOfSection2 .LeftPart .ImageBorder .MyImage .ImageLayer .LayerData .SmallImg{
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+.Section2 .ContatinerOfSection2 .LeftPart .ImageBorder .MyImage .ImageLayer .LayerData .SmallImg img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.Section2 .ContatinerOfSection2 .LeftPart .ImageBorder .MyImage .ImageLayer .LayerData .SmallImg img:hover{
+    background-color: #FF305B;
+    border: 2px solid #FF305B;
+}
+.Section2 .ContatinerOfSection2 .RightPart{
+    width: 50%;
+    float: left;
+    overflow: auto;
+}
+.Section2 .ContatinerOfSection2 .RightPart h1 span{
+    color: #FF305B;
+}
+.Section2 .ContatinerOfSection2 .RightPart h1{
+    color: #333333;
+}
+.Section2 .ContatinerOfSection2 .RightPart p{
+    color: #555555;
+    margin: 15px 0 30px 0;
+}
+.Section2 .ContatinerOfSection2 .RightPart hr{
+    color: #555555;
+    border-style: dashed;
+}
+.Section2 .ContatinerOfSection2 .RightPart .LeftHalfPart{
+    width: 40%;
+    float: left;
+}
+.Section2 .ContatinerOfSection2 .RightPart .RightHalfPart{
+    width: 60%;
+    float: left;
+}
+.Section2 .ContatinerOfSection2 .RightPart .RightHalfPart a{
+    text-decoration: none;
+    color: #555555;
+}
+.Section2 .ContatinerOfSection2 .RightPart button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FF305B;
+    padding: 10px 20px; 
+    color: white;
+    border: 0px transparent;
+    border-radius: 7px;
+    margin-right: 10px; 
+    cursor: pointer;
+}
+.Section2 .ContatinerOfSection2 .RightPart button img{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    float: right;
+}
+.Section2 .ContatinerOfSection2 .RightPart button:hover{
+    background-color: red;
+}
+/********************************************************************************************/
+/********************************************************************************************/
+.Section3{
+    width: 100%;
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 70px;
+}
+ .StartUpHeader{
+    color: #333333;
+    font-size: 40px;
+    margin: 10px auto;
+}
+ .S{
+    margin: auto;
+    width: 10%;
+    color: #FF305B;
+}
+ .L{
+    margin: 3px auto;
+    width: 20%;
+    color: #FF305B;
+}
+.Section3 .ContatinerOfSection3{
+    margin-top: 15px;
+    overflow: auto;
+    padding: 5px;
+}
+.Section3 .ContatinerOfSection3 .FourServices{
+    width: 25%;
+    float: left;
+    margin: 15px 0;
+    color: #555555;
+    padding: 20px 10px;
+}
+.Section3 .ContatinerOfSection3 .FourServices img{
+    width: 40px;
+    height: 40px;
+    transition: 1s all;
+}
+.Section3 .ContatinerOfSection3 .FourServices h3{
+    color: #333333;
+    margin: 15px 0;
+}
+.Section3 .ContatinerOfSection3 .FourServices:hover{
+    background-color: white;
+    border: 1px gray solid;
+    outline: 1px gray inset;
+}
+.Section3 .ContatinerOfSection3 .FourServices:hover img{
+    transform: scale(1.2);
+}
+/**************************************************************************************************/
+/**************************************************************************************************/
+.Section4{
+    width: 100%;
+    overflow: auto;
+}
+.Section4 .Container1Sec4{
+    width: 70%;
+    margin: 50px auto;
+    text-align: center;
+}
+.Section4 .Container1Sec4 ul{
+    list-style: none;
+    margin: 20px auto;
+    overflow: auto;
+}
+.Section4 .Container1Sec4 ul li{
+    margin: 50px 20px;
+    display: inline;
+}
+.Section4 .Container1Sec4 ul li a{
+    text-decoration: none;
+    color: #555555;
+}
+.VIP{
+    color: #FF305B;
+}
+.Section4 .Container1Sec4 .List{
+    margin: auto;
+}
+.Section4 .Container2Sec4{
+    width: 90%;
+    margin: 50px auto;
+    overflow: auto;
+}
+.Section4 .Container2Sec4 .C1OfC2OfSec4{
+    padding: 10px;
+    overflow: auto;
+}
+.Section4 .Container2Sec4 .C1OfC2OfSec4 .Data3Parts{
+    width: 31.3333%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    margin: 0 2% 2% 0;
+}
+.Section4 .Container2Sec4 .C1OfC2OfSec4 .Data3Parts img{
+    width: 100%;    
+}
+.Section4 .Container2Sec4 .C1OfC2OfSec4 .Data3Parts .Data3PartsLayer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 33, 33, 0.7);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s all;
+}
+.Section4 .Container2Sec4 .C1OfC2OfSec4 .Data3Parts:hover .Data3PartsLayer{
+    opacity: 1;
+}
+.Section4 .Container2Sec4 .C1OfC2OfSec4 .Data3Parts .SmallImage{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    transition: 0.5s opacity;
+}
+.Section4 .Container2Sec4 .C1OfC2OfSec4 .Data3Parts:hover .SmallImage{
+    opacity: 1;
+}
+/**************************************************************************************************/
+/**************************************************************************************************/
+.Section5{
+    width: 100%;
+    background-color: #F1F1F1;
+    overflow: auto;
+}
+.Section5 .ContainerSection5{
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    overflow: auto;
+    padding: 50px 0;
+}
+.Section5 .ContainerSection5 .FourPartsOfData{
+    float: left;
+    width: 25%;
+}
+.Section5 .ContainerSection5 .FourPartsOfData img{
+    width: 60px;
+    height: 45px;
+}
+.Section5 .ContainerSection5 .FourPartsOfData h3{
+    margin: 15px 0;
+}
+.Section5 .ContainerSection5 .FourPartsOfData p{
+    color: #333333;    
+}
+/**************************************************************************************************/
+/**************************************************************************************************/
+.Section6{
+    width: 100%;
+    background-color: white;
+}
+.Section6 .Container1Sec6{
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+}
+.Section6 .Container2Sec6{
+    width: 70%;
+    margin: 20px auto;
+    padding: 0 50px;
+}
+.Section6 .Container2Sec6 .BlockOfFeedback{
+    border: 1px solid transparent;
+    background-color: #F1F1F1;
+    margin-bottom: 150px;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.Section6 .Container2Sec6 .BlockOfFeedback::after{
+    content: "";
+    background-color: #FF305B;
+    position: absolute;
+    right: 80%;
+    bottom: 5%;
+    transform: rotate(45deg);
+    width: 300px;
+    height: 500px;
+}
+.Section6 .Container2Sec6 .BlockOfFeedback .RightData{
+    width: 70%;
+    float: right;
+    color: #333333;
+}
+.Section6 .Container2Sec6 .BlockOfFeedback .RightData .img{
+    float: left;
+}
+.Section6 .Container2Sec6 .BlockOfFeedback .RightData .rate{  
+    margin-top: 15px;
+}
+.Section6 .Container2Sec6 .BlockOfFeedback .LeftData{
+    width: 15%;
+    float: left;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    z-index: 2;
+}
+.Section6 .Container2Sec6 .BlockOfFeedback .LeftData img{
+    width: 100%;
+    border-radius: 50%;
+}
+/**************************************************************************************************/
+/**************************************************************************************************/
+.Section7{
+    width: 100%;
+    background-color: #F1F1F1;
+    padding-top: 50px;
+}
+.Section7 .Header{
+    margin: auto;
+    text-align: center;
+}
+.Section7 .Header h1{
+    margin: 10px;
+    color: #333333;
+}
+.Section7 .Iframes{
+    margin: auto;
+    width: 90%;
+    padding: 30px;
+    overflow: auto;
+}
+.Section7 .Iframes .Iframe{
+    width: 33.3333%;
+    float: left;
+    padding: 15px;
+}
+.Section7 .Iframes .Iframe .DivHead{
+    height: 30%;
+    width: 100%;
+}
+.Section7 .Iframes .Iframe .DivHead img{
+    width: 100%;
+    height: 100%;
+
+}
+.Section7 .Iframes .Iframe .DivTail{
+    padding: 15px;
+    width: 100%;
+    background-color: white;
+    color: #945555;
+    margin-bottom: 50px;
+}
+.Section7 .Iframes .Iframe .DivTail a{
+    text-decoration: none;
+    color: #945555;
+}
+.Section7 .Iframes .Iframe .DivTail h3{
+    color: #333333;
+    margin: 10px 0;
+    transition: 1s all;
+} 
+.Section7 .Iframes .Iframe .DivTail h3:hover{
+    color: #FF305B;
+}
+.Section7 .Iframes .Iframe .DivTail p{
+    color: #555555;
+}
+.Section7 .Iframes .Iframe .DivTail .EndofDiv{
+    margin: 15px 0;
+}
+.Section7 .Iframes .Iframe .DivTail .EndofDiv a{
+    color: #333333;
+    transition: 1s all;
+}
+.Section7 .Iframes .Iframe .DivTail .EndofDiv a:hover{
+    color: #FF305B;
+}
+/**************************************************************************************************/
+/**************************************************************************************************/
+.Section8{
+    width: 100%;
+    background-color: white;
+}
+.Section8 .Container1Sec8{
+    width: 70%;
+    margin: 50px auto;
+    text-align: center;
+    overflow: auto;
+}
+.Section8 .MyForm{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    padding: 20px ;
+    overflow: auto;
+}
+.Section8 .MyForm .NameInput{
+    padding: 10px ;
+    width: 350px; 
+    float: left;
+    margin-right: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: 0.5s border;
+}
+.Section8 .MyForm .NameInput:focus{
+    border: 2px solid #FF305B;
+}
+.Section8 .MyForm .EmailInput{
+    padding: 10px ;
+    width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: 0.5s border;
+}
+.Section8 .MyForm .EmailInput:focus{
+    border: 2px solid #FF305B;
+}
+.Section8 .MyForm .SubjectInput{
+    padding: 10px ;
+    width: 745px; 
+    float: left;
+    margin: 25px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: 0.5s border;
+}
+.Section8 .MyForm .SubjectInput:focus{
+    border: 2px solid #FF305B;
+}
+.Section8 .MyForm .TextArea{
+    padding: 25px ;
+    width: 745px; 
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: 0.5s border;
+}
+.Section8 .MyForm .TextArea:focus{
+    border: 2px solid #FF305B;
+}
+.Section8 .MyForm button{
+    padding: 10px 15px ;
+    float: left;
+    border: 1px solid transparent;
+    background-color: #FF305B;
+    border-radius: 5px;
+    transition: 0.5s all;
+    margin-top: 30px ;
+    cursor: pointer;
+}
+.Section8 .MyForm button:hover{
+    background-color: red;
+}
+/*Not Completed*/
+/**************************************************************************************************/
+/**************************************************************************************************/
+.Section9{
+    width: 100%;
+    background-color: #333333;
+    overflow: auto;
+}
+.Section9 .ContainerOfSec9{
+    width: 60%;
+    margin: 50px auto;
+    text-align: center;
+}
+.Section9 .ContainerOfSec9 ul{
+    list-style: none;
+    overflow: auto;
+    margin: auto;
+}
+.Section9 .ContainerOfSec9 ul li{
+    display: inline;
+    margin-right: 10px;
+}
+.Section9 .ContainerOfSec9 ul a img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.Section9 .ContainerOfSec9 h4{
+    color: white;
+    margin: 10px 0;
+
+}
+.Section9 .ContainerOfSec9 h4 span{
+    color: #FF305B;
+}
+.Section9 .ContainerOfSec9 h4 span a{
+    color: #FF305B;
+    text-decoration: none;
+    transition: 1s all;
+}
+.Section9 .ContainerOfSec9 h4 span a:hover{
+    text-decoration: underline;
+}
+
+
+@media (max-width:1200px) and (min-width:992px)
+{
+    /* Section3 */
+    .Section3 .ContatinerOfSection3 .FourServices{
+        width: 33.3333%;
+        float: left;
+        margin: 15px 0;
+        color: #555555;
+        padding: 20px 10px;
+    }
+    .Section3 .ContatinerOfSection3 .FourServices:hover img{
+        transform: scale(1.3);
+    }
+    /* Section3 */    
+    /* Section5 */    
+    .Section5 .ContainerSection5 .FourPartsOfData{
+        float: left;
+        width: 33.3333%;
+    }
+    /* Section5 */
+}
+@media (max-width:991px) and (min-width:768px)
+{
+    /* Section3 */
+    .Section3 .ContatinerOfSection3 .FourServices{
+        width: 50%;
+        float: left;
+        margin: 15px 0;
+        color: #555555;
+        padding: 20px 10px;
+    }
+    .Section3 .ContatinerOfSection3 .FourServices:hover img{
+        transform: scale(1.4);
+    }
+    /* Section3 */
+    /* Section5 */    
+    .Section5 .ContainerSection5 .FourPartsOfData{
+        float: left;
+        width: 50%;
+    }
+    /* Section5 */    
+    /* Section4 */    
+    .Section4 .Container2Sec4 .C1OfC2OfSec4 .Data3Parts{
+        width: 50%;
+        float: left;
+        position: relative;
+        overflow: hidden;
+        padding: 15px;
+    }               
+    /* Section4 */   
+    /* Section7 */   
+    .Section7 .Iframes .Iframe{
+        width: 50%;
+        float: left;
+        padding: 15px;
+    } 
+    /* Section7 */   
+
+}
+@media (max-width:767px) 
+{
+    /* Section3 */
+    .Section3 .ContatinerOfSection3 .FourServices{
+        width: 100%;
+        float: left;
+        margin: 15px 0;
+        color: #555555;
+        padding: 20px 10px;
+    }
+    .Section3 .ContatinerOfSection3 .FourServices:hover img{
+        transform: scale(1.5);
+    }
+    /* Section3 */
+    /* Section5 */    
+    .Section5 .ContainerSection5 .FourPartsOfData{
+        float: left;
+        width: 100%;
+    }
+    /* Section5 */   
+    /* Section4 */    
+    .Section4 .Container2Sec4 .C1OfC2OfSec4 .Data3Parts{
+        width: 100%;
+        float: left;
+        position: relative;
+        overflow: hidden;
+        padding: 15px;
+    }               
+    /* Section4 */     
+    /* Section7 */   
+    .Section7 .Iframes .Iframe{
+        width: 100%;
+        float: left;
+        padding: 15px;
+    } 
+    /* Section7 */   
+    /* Section2 */
+    .Section2 .ContatinerOfSection2 .RightPart{
+        width: 100%;
+        float: left;
+        overflow: auto;
+    }
+    .Section2 .ContatinerOfSection2 .LeftPart{
+        width: 100%;
+        float: left;
+        overflow: auto;
+    }
+    /* Section2 */
+    .Section8 .MyForm .TextArea{
+        width: 300px;
+    } 
+    .Section8 .MyForm .SubjectInput{
+        width: 300px;
+    }  
+    .Section8 .MyForm .NameInput{
+        width: 300px;
+        margin-right: 15px;
+    }  
+    .Section8 .MyForm .EmailInput{
+        width: 300px;
+    }    
+
+}

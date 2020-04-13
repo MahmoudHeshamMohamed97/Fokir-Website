@@ -1,0 +1,5 @@
+Used:
+HTML,CSS,MediaQuery.
+UnCompleted:
+*Animation Part in web Designer and web developer. (Done)
+*Upload the project on Git.
